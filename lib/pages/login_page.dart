@@ -90,10 +90,10 @@ class _LoginPageState extends State<LoginPage> {
                           scrollPadding: EdgeInsets.only(bottom: 40),
                           obscureText: true,
                           decoration: textInputDecoreation.copyWith(
-                              labelText: "Passwrod", prefix: Icon(Icons.lock, color: Theme.of(context).primaryColor)),
+                              labelText: "Password", prefix: Icon(Icons.lock, color: Theme.of(context).primaryColor)),
                           validator: (val) {
                             if (val!.length < 6) {
-                              return "Paswırd must be at least 6 characters";
+                              return "Password must be at least 6 characters";
                             } else {
                               return null;
                             }
